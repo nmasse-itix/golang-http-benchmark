@@ -6,7 +6,7 @@ set -e # Do not continue if jmeter fails
 export HEAP="-Xms1g -Xmx1g -XX:MaxMetaspaceSize=256m"
 date="$(date +%F-%H-%M-%S)"
 
-for scenario in golang-net-http golang-fasthttp; do
+for scenario in nginx golang-net-http golang-fasthttp; do
   echo
   echo "================================================================================"
   echo "Running scenario $scenario..."
